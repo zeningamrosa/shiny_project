@@ -28,7 +28,7 @@ Additionally we can choose years such as 1999, 2008 and both years.
 
 This selection shows scatter plot of highway mpg against engine displacement. 
 
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
 
 -----
 
@@ -37,7 +37,7 @@ This selection shows scatter plot of highway mpg against engine displacement.
 This selection shows boxplot of highway mpg by car classes
 
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
 
 -----
 
@@ -46,7 +46,7 @@ This selection shows boxplot of highway mpg by car classes
 This selection shows scatter plot of highway mpg by car manufacturer
 
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3.png) 
 
 
 
