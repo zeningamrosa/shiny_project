@@ -1,0 +1,59 @@
+---
+title       : Miles per gallon
+subtitle    : year of 1999 and 2008
+author      : GG Choi
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+---
+
+## Graphes
+
+You can choose graphes discribed as below.
+
+1. scatter plot of highway milage against engine displacement
+2. boxplot by class
+3. scatter plot of highway milage against engine displacement by manufacturers
+
+Additionally you can choose years such as 1999, 2008 and both years
+
+----
+
+## 1. by engine size
+
+This selection shows scatter plot of highway mpg against engine displacement. 
+
+```{r, fig.height=5, fig.aligh='center', message=F, echo=FALSE}
+require(ggplot2)
+ggplot(mpg,aes(hwy,displ,color=factor(cyl)))+geom_point(aes(shape=factor(year)))
+```
+
+-----
+
+## 2. boxplot by class
+
+This selection shows boxplot of highway mpg by car class
+
+
+```{r, fig.height=5, fig.aligh='center', message=F, echo=FALSE}
+require(ggplot2)
+ggplot(mpg,aes(class,displ,color=factor(cyl)))+geom_boxplot(aes(shape=factor(year)))
+```
+
+-----
+
+## 3. by manufacturer
+
+This selection shows scatter plot of highway mpg by car manufacturer
+
+
+```{r, fig.height=5, fig.aligh='center', message=F, echo=FALSE}
+require(ggplot2)
+ggplot(mpg,aes(hwy,displ,color=factor(cyl)))+geom_point(aes(shape=factor(year)))+facet_wrap(~manufacturer)
+```
+
+
+
